@@ -1,0 +1,26 @@
+{
+  "generated": "2026-10-25 12:00",
+  "checklists": [
+    {
+      "id": "bank-buttons",
+      "title": "Bank buttons",
+      "area": "Interfaces",
+      "source": "build 1.4",
+      "setup": "Stand next to any bank.",
+      "items": [
+        { "n": 1, "text": "Open your bank and press Deposit inventory.", "expect": "Everything in your inventory goes into the bank." },
+        { "n": 2, "text": "Press Deposit worn items.", "expect": "Your equipment goes into the bank." },
+        { "n": 3, "text": "Search for an item by name.", "expect": "Only matching items are shown.", "passed": true }
+      ]
+    },
+    {
+      "id": "run-energy",
+      "title": "Running",
+      "area": "Movement",
+      "items": [
+        { "n": 1, "text": "Click the run orb, then click somewhere a few tiles away.", "expect": "You run, two tiles a tick." },
+        { "n": 2, "text": "Run until your energy is empty.", "expect": "You switch back to walking." }
+      ]
+    }
+  ]
+}
